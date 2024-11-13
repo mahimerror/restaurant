@@ -1,0 +1,8 @@
+.bg-book{
+    background: url('../../assets/bookbanner.jpg') no-repeat center;
+    background-size: cover;
+}
+
+::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+}
