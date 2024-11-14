@@ -1,35 +1,39 @@
-Live Demo : [text](https://restuurant.netlify.app/)
+<h2>Live Demo : https://restuurant.netlify.app/</h2>
 
-About the Project
+<h2>About the Project</h2>
 Restaurant is a responsive web application created with React, Vite, and styled using Tailwind CSS. The application allows users to see menu & contact info . It features a clean, user-friendly interface and a responsive design that works on all screen sizes.
 
-Built With
-React - A JavaScript library for building user interfaces
-Vite - A fast development build tool
-Tailwind CSS - Utility-first CSS framework for styling
+<h2>Built With</h2>
+<ul>
+<li>React - A JavaScript library for building user interfaces</li>
+<li>Vite - A fast development build tool</li>
+<li>Tailwind CSS - Utility-first CSS framework for styling</li>
+</ul>
 
-Getting Started
+<h2>Getting Started</h2>
 To get a local copy of this project up and running, follow these steps.
 
-Prerequisites
-Ensure you have these installed:
+<p>Ensure you have these installed:</p>
 
-Node.js (v14 or higher)
-npm
-Installation
-Clone this repository: git clone https://github.com/mahimerror/restaurant.git
-Navigate to the project directory: cd restaurant
-Install the dependencies: npm install
-Start the development server: npm run dev
-Open http://localhost:5173/ in your browser to view the project.
+<p>Node.js (v14 or higher)</p>
+<p>npm</p>
 
-Features
+<h2>Installation</h2>
+<ul>
+<li>Clone this repository: git clone https://github.com/mahimerror/restaurant.git</li>
+<li>Navigate to the project directory: cd restaurant</li>
+<li>Install the dependencies: npm install</li>
+<li>Start the development server: npm run dev</li>
+<li>Open http://localhost:5173/ in your browser to view the project.</li>
+</ul>
 
-Responsive design with mobile and desktop views.
-Intuitive and user-friendly interface.
-Dynamic filtering and search capabilities.
-Tailored backend functionality for seamless data processing.
-
+<h2>Features</h2>
+<ul>
+<li>Responsive design with mobile and desktop views.</li>
+<li>Intuitive and user-friendly interface.</li>
+<li>Dynamic filtering and search capabilities.</li>
+<li>Tailored backend functionality for seamless data processing.</li>
+</ul>
 
 # React + Vite
 
