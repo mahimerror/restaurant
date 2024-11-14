@@ -27,8 +27,8 @@ const Popular = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 1000,
+        autoplaySpeed: 1000,
         responsive: [
             {
                 breakpoint: 1024,
@@ -51,8 +51,8 @@ const Popular = () => {
             <div className="w-11/12 mx-auto py-8 md:py-28">
                 <div className="flex items-center justify-between mb-7 md:mb-16  gap-12">
                     <div className="left">
-                        <p className="flex items-center gap-2 text-xl roboto font-bold text-reed"><FaSquareFull className="text-xs" /> Crispy, Every Bite Taste</p>
-                        <h3 className="bebas font-bold text-6xl mt-4">POPULAR FOOD ITEMS</h3>
+                        <p className="flex items-center gap-2 md:text-xl roboto font-bold text-reed"><FaSquareFull className="text-xs" /> Crispy, Every Bite Taste</p>
+                        <h3 className="bebas font-bold text-[40px] text-6xl mt-4">POPULAR FOOD ITEMS</h3>
                     </div>
 
                     <div className="right hidden sm:block">

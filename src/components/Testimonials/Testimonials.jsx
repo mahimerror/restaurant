@@ -12,6 +12,9 @@ import { FaAngleRight } from "react-icons/fa";
 import { useRef, useState } from 'react';
 
 import reviewimg from "../../assets/review.png"
+import des1 from "../../assets/design/des1.png"
+import des2 from "../../assets/design/des2.png"
+import des3 from "../../assets/design/des3.png"
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 import rev1 from "../../assets/rev/rev1.png"
@@ -47,12 +50,19 @@ const Testimonials = () => {
 
 
     return (
-        <div className="">
+        <div className="relative">
+            <div className="hidden sm:block">
+                <div className="absolute top-44 left-0 z-[-1]"><img src={des2} alt="" /></div>
+                <div className="absolute bottom-0 right-0 z-[-1]"><img src={des3} alt="" /></div>
+            </div>
+
+
+
             <div className="w-11/12 mx-auto py-8 md:py-28">
                 <div className="flex items-center justify-between mb-7 md:mb-16  gap-12">
                     <div className="left">
-                        <p className="flex items-center gap-2 text-xl roboto font-bold text-reed"><FaSquareFull className="text-xs" /> Crispy, Every Bite Taste</p>
-                        <h3 className="bebas font-bold text-6xl mt-4">What Some of my Customers Say</h3>
+                        <p className="flex items-center gap-2 md:text-xl roboto font-bold text-reed"><FaSquareFull className="text-xs" /> Crispy, Every Bite Taste</p>
+                        <h3 className="bebas font-bold text-[40px] md:text-6xl mt-4 ">What Some of my Customers Say</h3>
                     </div>
 
                     <div className="right hidden sm:block">
@@ -88,9 +98,11 @@ const Testimonials = () => {
                         >
                             <SwiperSlide>
                                 {/* Slide1 */}
-                                <div className="flex flex-col-reverse lg:flex-row">
-                                    <div className="left bg-ylw px-10 py-16 flex aspect-square lg:w-1/3">
-                                        <RiDoubleQuotesL className='w-16' />
+                                <div className="flex flex-col-reverse lg:flex-row items-stretch">
+                                    <div className="left bg-ylw p-6 md:px-10 md:py-16 flex gap-1 aspect-square lg:w-[36%] relative">
+                                        <div className="absolute bottom-[-12px] md:top-3/4 left-0"><img src={des1} alt="" /></div>
+
+                                        <RiDoubleQuotesL className='min-w-4' />
                                         <div className="mt-2 flex flex-col justify-between">
                                             <p>You can&apos;t go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
 
@@ -109,7 +121,7 @@ const Testimonials = () => {
                                         </div>
                                     </div>
 
-                                    <div className="right lg:w-2/3 aspect-video">
+                                    <div className="right lg:w-[64%] aspect-video">
                                         <div className="relative w-full">
                                             {/* Conditional rendering: Show thumbnail and button if not playing, else show video */}
                                             {!isPlaying ? (
@@ -125,7 +137,7 @@ const Testimonials = () => {
                                                         onClick={handlePlay}
                                                         className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50"
                                                     >
-                                                        <MdPlayCircle className='text-ylw text-6xl'/>
+                                                        <MdPlayCircle className='text-ylw text-6xl' />
                                                     </button>
                                                 </div>
                                             ) : (
@@ -142,19 +154,23 @@ const Testimonials = () => {
                                     </div>
                                 </div>
                             </SwiperSlide>
+
+
                             <SwiperSlide>
                                 {/* Slide2 */}
                                 <div className="flex flex-col-reverse lg:flex-row">
-                                    <div className="left bg-ylw px-10 py-16 flex aspect-square lg:w-1/3">
-                                        <RiDoubleQuotesL className='w-16' />
+                                    <div className="left bg-ylw p-6 md:px-10 md:py-16 flex gap-1 aspect-square lg:w-[36%] relative">
+                                        <div className="absolute bottom-[-12px] md:top-3/4 left-0"><img src={des1} alt="" /></div>
+
+                                        <RiDoubleQuotesL className='min-w-4' />
                                         <div className="mt-2 flex flex-col justify-between">
-                                            <p>You can&apos;t go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
+                                            <p>The Spicy Ramen Bowl was fantastic! The broth was rich and full of flavor with a perfect level of spice, and the noodles were cooked just right. The toppings were fresh, and the pork belly was tender and delicious. I&apos;d definitely go back for this!</p>
 
                                             <div>
                                                 <div className="flex justify-between items-center">
                                                     <div className="">
-                                                        <h5 className='bebas font-bold text-lg'>Khalid Al Dawsry</h5>
-                                                        <p className='roboto text-sm'>Jeddah, Saudi</p>
+                                                        <h5 className='bebas font-bold text-lg'>MD. Monir Hossen Mahim</h5>
+                                                        <p className='roboto text-sm'>Dhaka, Bangladesh</p>
                                                     </div>
                                                     <div className="py-4 border-b-4 border-reed">
                                                         <img src={reviewimg} alt="" />
@@ -165,7 +181,7 @@ const Testimonials = () => {
                                         </div>
                                     </div>
 
-                                    <div className="right lg:w-2/3 aspect-video">
+                                    <div className="right lg:w-[64%] aspect-video">
                                         <div className="relative w-full">
                                             {/* Conditional rendering: Show thumbnail and button if not playing, else show video */}
                                             {!isPlaying ? (
@@ -181,7 +197,7 @@ const Testimonials = () => {
                                                         onClick={handlePlay}
                                                         className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg"
                                                     >
-                                                        <MdPlayCircle className='text-ylw text-6xl'/>
+                                                        <MdPlayCircle className='text-ylw text-6xl' />
                                                     </button>
                                                 </div>
                                             ) : (
@@ -203,16 +219,18 @@ const Testimonials = () => {
                             <SwiperSlide>
                                 {/* Slide3 */}
                                 <div className="flex flex-col-reverse lg:flex-row">
-                                    <div className="left bg-ylw px-10 py-16 flex aspect-square lg:w-1/3">
-                                        <RiDoubleQuotesL className='w-16' />
+                                    <div className="left bg-ylw  p-6 md:px-10 md:py-16 flex gap-1 aspect-square lg:w-[36%] relative">
+                                        <div className="absolute bottom-[-12px] md:top-3/4 left-0"><img src={des1} alt="" /></div>
+
+                                        <RiDoubleQuotesL className='min-w-4' />
                                         <div className="mt-2 flex flex-col justify-between">
-                                            <p>You can&apos;t go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
+                                            <p>The Margherita Pizza here is a must-try! I&apos;ve had it a couple of times, and it&apos;s always spot on. The crust is thin and crispy, with just the right amount of chewiness, and the fresh basil and mozzarella make every bite flavorful. It&apos;s simple yet so satisfying. Highly recommend if you&apos;re a pizza lover!</p>
 
                                             <div>
                                                 <div className="flex justify-between items-center">
                                                     <div className="">
-                                                        <h5 className='bebas font-bold text-lg'>Khalid Al Dawsry</h5>
-                                                        <p className='roboto text-sm'>Jeddah, Saudi</p>
+                                                        <h5 className='bebas font-bold text-lg'>Shakil Ahmed</h5>
+                                                        <p className='roboto text-sm'>Sylhet, Bangladesh</p>
                                                     </div>
                                                     <div className="py-4 border-b-4 border-reed">
                                                         <img src={reviewimg} alt="" />
@@ -223,7 +241,7 @@ const Testimonials = () => {
                                         </div>
                                     </div>
 
-                                    <div className="right lg:w-2/3 aspect-video">
+                                    <div className="right lg:w-[64%] aspect-video">
                                         <div className="relative w-full">
                                             {/* Conditional rendering: Show thumbnail and button if not playing, else show video */}
                                             {!isPlaying ? (
@@ -239,7 +257,7 @@ const Testimonials = () => {
                                                         onClick={handlePlay}
                                                         className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg"
                                                     >
-                                                        <MdPlayCircle className='text-ylw text-6xl'/>
+                                                        <MdPlayCircle className='text-ylw text-6xl' />
                                                     </button>
                                                 </div>
                                             ) : (
