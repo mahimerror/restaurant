@@ -4,7 +4,7 @@
 
 .banner-bg::before{
     content: '';
-    background-image: url("https://s3-alpha-sig.figma.com/img/543a/3190/e709b27bbda0155da5252a80704b546b?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PqDf6a6FQqEpGyIKvmP-4tcFm16mGejVM2Hk588h5KkVawFhxSnZRIOUimAS-QHjPVASOBz35DXDVUhHY1RduPrQnpzMxMN60VwoluNDozc9~FKI20~rw7FTsFCzQVjkiNPjhQwUT1MjmGQxrpz~X82lQhYUySsXuv1Gd7BwsXZTUABCud3oE7skjjB6oWvPTjt~F2aWJtzJirWbsU40pyOZdJrwXTBQIdJN6nup1qPZMESsO~AAiZEMgrE8zOYIKztI40ewCUehhygjSpVGqHklysWg9~AOURGJ1-6GT7CJYY7pHzGftoJwtS4HKWi11OUZD7ufUVj4jIeitHKrDA__");
+    background-image: url("../src/assets/design/des9.png");
     position: absolute;
     top: 0;
     left: 0;

@@ -1,0 +1,7 @@
+.about-bg{
+    background: url('../../assets/about.jpg');
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}

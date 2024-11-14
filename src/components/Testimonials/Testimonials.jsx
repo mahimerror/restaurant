@@ -11,10 +11,11 @@ import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import { useRef, useState } from 'react';
 
-import reviewimg from "../../assets/review.png"
 import des1 from "../../assets/design/des1.png"
 import des2 from "../../assets/design/des2.png"
 import des3 from "../../assets/design/des3.png"
+
+import reviewimg from "../../assets/review.png"
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 import rev1 from "../../assets/rev/rev1.png"

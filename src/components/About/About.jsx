@@ -1,9 +1,12 @@
 import { useState } from "react";
-import aboutimg from "../../assets/about.png"
 import { FiPhoneCall } from "react-icons/fi";
 import icon1 from "../../assets/icons/icon1.png"
 import icon2 from "../../assets/icons/icon2.png"
 import icon3 from "../../assets/icons/icon3.png"
+import des5 from "../../assets/design/des5.png"
+import des6 from "../../assets/design/des6.png"
+
+import './about.css'
 
 const About = () => {
     const [activeButton, setActiveButton] = useState("About");
@@ -29,11 +32,16 @@ const About = () => {
 
 
     return (
-        <div>
+        <div className="relative">
+            <div className="hidden md:block">
+                <div className="absolute bottom-24 right-0 z-[-1]"><img src={des5} alt="" /></div>
+            </div>
+
+
             <div className="w-11/12 mx-auto py-8 md:py-28">
-                <div className="flex flex-col lg:flex-row gap-20 mb-16">
-                    <div className="left lg:w-1/2 ">
-                        <img src={aboutimg} alt="" className="w-full lg:min-h-[450px]" />
+                <div className="flex flex-col lg:flex-row gap-y-8 gap-x-20 mb-12 md:mb-16">
+                    <div className="left lg:w-1/2 about-bg min-h-[246px] relative">
+                        <div className="absolute w-2/5 top-7 left-7"><img src={des6} alt="" /></div>
                     </div>
 
                     <div className="right lg:w-1/2 lg:min-h-[450px]">
@@ -59,9 +67,9 @@ const About = () => {
                                 </button>
                             </div>
 
-                            <div className="my-8">
-                                <h3 className="bebas font-bold text-6xl">{content.title}</h3>
-                                <p className="roboto mt-4">{content.description}</p>
+                            <div className="mt-6 mb-8 md:my-8">
+                                <h3 className="bebas font-bold text-5xl md:text-6xl">{content.title}</h3>
+                                <p className="roboto mt-3 md:mt-4">{content.description}</p>
                             </div>
 
                             <div className="flex items-center gap-8">

@@ -9,6 +9,7 @@ import item1 from "../../assets/items/item1.png"
 import item2 from "../../assets/items/item2.png"
 import item3 from "../../assets/items/item3.png"
 import item4 from "../../assets/items/item4.png"
+import des4 from "../../assets/design/des4.png"
 
 const Popular = () => {
     let sliderRef = useRef(null);
@@ -47,7 +48,13 @@ const Popular = () => {
 
 
     return (
-        <div className="bg-[#FBF7F2]">            
+        <div className="bg-[#FBF7F2] relative">
+            <div id="leaf" className="hidden md:block">
+                <div className="absolute top-44 left-0"><img src={des4} alt="" /></div>
+            </div>
+
+
+
             <div className="w-11/12 mx-auto py-8 md:py-28">
                 <div className="flex items-center justify-between mb-7 md:mb-16  gap-12">
                     <div className="left">
