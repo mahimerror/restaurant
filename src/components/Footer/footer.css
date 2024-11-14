@@ -1,0 +1,23 @@
+.footer-bg {
+    position: relative;
+    background: url("../../assets/footer.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.footer-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000CC;
+    opacity: 0.8; /* Semi-transparent black */
+    backdrop-filter: blur(6.5px); /* Blur effect */
+    z-index: 0; /* Ensure it sits on top of the background */
+}
+
+.footer-bg > * {
+    position: relative;
+    z-index: 1;
+}

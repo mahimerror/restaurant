@@ -13,9 +13,12 @@ import item4 from "../../assets/items/item4.png"
 const Popular = () => {
     let sliderRef = useRef(null);
     const next = () => {
+        sliderRef.slickPause();
         sliderRef.slickNext();
+
     };
     const previous = () => {
+        sliderRef.slickPause();
         sliderRef.slickPrev();
     };
     var settings = {
@@ -26,7 +29,6 @@ const Popular = () => {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear",
         responsive: [
             {
                 breakpoint: 1024,
@@ -45,7 +47,7 @@ const Popular = () => {
 
 
     return (
-        <div className="bg-[#FBF7F2]">
+        <div className="bg-[#FBF7F2]">            
             <div className="w-11/12 mx-auto py-8 md:py-28">
                 <div className="flex items-center justify-between mb-7 md:mb-16  gap-12">
                     <div className="left">
@@ -75,7 +77,7 @@ const Popular = () => {
                             className="text-center"
                         >
                             <div key={1}>
-                                <div className="flex flex-col justify-center items-center bg-white h-72 mx-4">
+                                <div className="flex flex-col justify-center items-center bg-white h-72 sm:mx-4">
                                     <img src={item1} alt="" className="h-32" />
                                     <hr className="border-2 border-reed w-14 my-6" />
                                     <p className="bebas text-2xl line leading-[36px]">vegetables burger</p>
@@ -83,31 +85,31 @@ const Popular = () => {
                                 </div>
                             </div>
                             <div key={2}>
-                                <div className="flex flex-col justify-center items-center bg-white h-72 mx-4">
+                                <div className="flex flex-col justify-center items-center bg-white h-72 sm:mx-4">
                                     <img src={item2} alt="" className="h-32" />
                                     <hr className="border-2 border-reed w-14 my-6" />
                                     <p className="bebas text-2xl line leading-[36px]">Spacial Pizza</p>
-                                    <p className="roboto leading-[32px]">Barbecue Italian cuisine pizza      </p>
+                                    <p className="roboto leading-[32px]">Barbecue Italian cuisine pizza</p>
                                 </div>
                             </div>
                             <div key={3}>
-                                <div className="flex flex-col justify-center items-center bg-white h-72 mx-4">
+                                <div className="flex flex-col justify-center items-center bg-white h-72 sm:mx-4">
                                     <img src={item3} alt="" className="h-32" />
                                     <hr className="border-2 border-reed w-14 my-6" />
-                                    <p className="bebas text-2xl line leading-[36px]">Spacial French fries  </p>
+                                    <p className="bebas text-2xl line leading-[36px]">Spacial French fries</p>
                                     <p className="roboto leading-[32px]">Barbecue Italian cuisine pizza</p>
                                 </div>
                             </div>
                             <div key={4}>
-                                <div className="flex flex-col justify-center items-center bg-white h-72 mx-4">
+                                <div className="flex flex-col justify-center items-center bg-white h-72 sm:mx-4">
                                     <img src={item4} alt="" className="h-32" />
                                     <hr className="border-2 border-reed w-14 my-6" />
-                                    <p className="bebas text-2xl line leading-[36px]">Cuisine Chicken </p>
+                                    <p className="bebas text-2xl line leading-[36px]">Cuisine Chicken</p>
                                     <p className="roboto leading-[32px]">Barbecue Italian cuisine pizza</p>
                                 </div>
                             </div>
                             <div key={5}>
-                                <div className="flex flex-col justify-center items-center bg-white h-72 mx-4">
+                                <div className="flex flex-col justify-center items-center bg-white h-72 sm:mx-4">
                                     <img src={item3} alt="" className="h-32" />
                                     <hr className="border-2 border-reed w-14 my-6" />
                                     <p className="bebas text-2xl line leading-[36px]">vegetables salad</p>
@@ -115,7 +117,7 @@ const Popular = () => {
                                 </div>
                             </div>
                             <div key={6}>
-                                <div className="flex flex-col justify-center items-center bg-white h-72 mx-4">
+                                <div className="flex flex-col justify-center items-center bg-white h-72 sm:mx-4">
                                     <img src={item2} alt="" className="h-32" />
                                     <hr className="border-2 border-reed w-14 my-6" />
                                     <p className="bebas text-2xl line leading-[36px]">korma</p>
