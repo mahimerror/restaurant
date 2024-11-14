@@ -69,7 +69,7 @@ const Book = () => {
 
     return (
         <div className='bg-book text-white'>
-            <div className="w-11/12 mx-auto py-8 md:py-28">
+            <div className="container w-11/12 mx-auto py-8 md:py-28">
                 <div className="md:w-1/2">
                     <p className="flex items-center gap-2 md:text-xl roboto font-bold text-reed"><FaSquareFull className="text-xs" /> Book Now</p>
 

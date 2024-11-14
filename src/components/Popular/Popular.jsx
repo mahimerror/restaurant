@@ -49,13 +49,13 @@ const Popular = () => {
 
     return (
         <div className="bg-[#FBF7F2] relative">
-            <div id="leaf" className="hidden md:block">
+            <div className="hidden md:block">
                 <div className="absolute top-44 left-0"><img src={des4} alt="" /></div>
             </div>
 
 
 
-            <div className="w-11/12 mx-auto py-8 md:py-28">
+            <div className="container w-11/12 mx-auto py-8 md:py-28">
                 <div className="flex items-center justify-between mb-7 md:mb-16  gap-12">
                     <div className="left">
                         <p className="flex items-center gap-2 md:text-xl roboto font-bold text-reed"><FaSquareFull className="text-xs" /> Crispy, Every Bite Taste</p>

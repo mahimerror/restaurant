@@ -38,7 +38,7 @@ const About = () => {
             </div>
 
 
-            <div className="w-11/12 mx-auto py-8 md:py-28">
+            <div className="container w-11/12 mx-auto py-8 md:py-28">
                 <div className="flex flex-col lg:flex-row gap-y-8 gap-x-20 mb-12 md:mb-16">
                     <div className="left lg:w-1/2 about-bg min-h-[246px] relative">
                         <div className="absolute w-2/5 top-7 left-7"><img src={des6} alt="" /></div>

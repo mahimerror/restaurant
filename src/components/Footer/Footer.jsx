@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <div className="text-center text-white footer-bg">
-            <div className="w-11/12 mx-auto py-8 md:py-28">
+            <div className="container w-11/12 mx-auto py-8 md:py-28">
                 <h3 className="bebas font-bold text-[40px] md:text-6xl mb-12">We ready to have you the best dining experiences</h3>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mb-[60px] md:mb-28">
