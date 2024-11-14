@@ -63,7 +63,7 @@ const Testimonials = () => {
                 <div className="flex items-center justify-between mb-7 md:mb-16  gap-12">
                     <div className="left">
                         <p className="flex items-center gap-2 md:text-xl roboto font-bold text-reed"><FaSquareFull className="text-xs" /> Crispy, Every Bite Taste</p>
-                        <h3 className="bebas font-bold text-[40px] md:text-6xl mt-4 ">What Some of my Customers Say</h3>
+                        <h3 className="bebas font-bold text-[40px] md:text-6xl mt-4 ">What Some of my <br className='md:hidden'/> Customers Say</h3>
                     </div>
 
                     <div className="right hidden sm:block">
@@ -105,7 +105,7 @@ const Testimonials = () => {
 
                                         <RiDoubleQuotesL className='min-w-4' />
                                         <div className="mt-2 flex flex-col justify-between">
-                                            <p>You can&apos;t go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
+                                            <p className='text-lg'>You can&apos;t go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
 
                                             <div>
                                                 <div className="flex justify-between items-center">
@@ -165,7 +165,7 @@ const Testimonials = () => {
 
                                         <RiDoubleQuotesL className='min-w-4' />
                                         <div className="mt-2 flex flex-col justify-between">
-                                            <p>The Spicy Ramen Bowl was fantastic! The broth was rich and full of flavor with a perfect level of spice, and the noodles were cooked just right. The toppings were fresh, and the pork belly was tender and delicious. I&apos;d definitely go back for this!</p>
+                                            <p className='text-lg'>The Spicy Ramen Bowl was fantastic! The broth was rich and full of flavor with a perfect level of spice, and the noodles were cooked just right. The toppings were fresh, and the pork belly was tender and delicious. I&apos;d definitely go back for this!</p>
 
                                             <div>
                                                 <div className="flex justify-between items-center">
@@ -225,7 +225,7 @@ const Testimonials = () => {
 
                                         <RiDoubleQuotesL className='min-w-4' />
                                         <div className="mt-2 flex flex-col justify-between">
-                                            <p>The Margherita Pizza here is a must-try! I&apos;ve had it a couple of times, and it&apos;s always spot on. The crust is thin and crispy, with just the right amount of chewiness, and the fresh basil and mozzarella make every bite flavorful. It&apos;s simple yet so satisfying. Highly recommend if you&apos;re a pizza lover!</p>
+                                            <p className='text-lg'>The Margherita Pizza here is a must-try! I&apos;ve had it a couple of times, and it&apos;s always spot on. The crust is thin and crispy, with just the right amount of chewiness, and the fresh basil and mozzarella make every bite flavorful. It&apos;s simple yet so satisfying.</p>
 
                                             <div>
                                                 <div className="flex justify-between items-center">

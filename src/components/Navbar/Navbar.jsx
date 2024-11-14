@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <div className="!fixed !top-0 !z-20 !w-full">
             <div className={`text-white transition-colors duration-300 z-20 ${isScrolled ? "bg-reed" : "bg-transparent"}`}>
-                <nav className="container w-11/12 mx-auto py-6">
+                <nav className="container w-11/12 mx-auto py-5 md:py-6">
                     <div className="flex gap-5 justify-between items-center">
 
                         <div className="start-nav flex items-center gap-12">

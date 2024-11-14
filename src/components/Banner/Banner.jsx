@@ -5,8 +5,8 @@ import des8 from "../../assets/design/des8.png"
 
 const Banner = () => {
     return (
-        <div className="text-white pb-8 md:pb-28 pt-32 md:pt-44">
-            <div className="container w-11/12 mx-auto md:relative">
+        <div className="text-white pb-8 md:pb-28 pt-24 md:pt-44">
+            <div className="container w-11/12 mx-auto relative">
                 <div className="flex flex-col md:flex-row gap-12">
 
                     <div className="left md:w-1/2">
@@ -24,10 +24,8 @@ const Banner = () => {
 
                     <div className="right md:w-1/2 flex justify-end">
                         <img src={bannerimg} alt="" className="min-w-full"/>
-                        <div className="hidden md:block">
-                            <div className="absolute top-[-36px] right-[-28px] z-[-1]"><img src={des7} alt="" /></div>
-                            <div className="absolute bottom-[-20px] right-[-60px]"><img src={des8} alt="" /></div>
-                        </div>
+                            <div className="absolute top-80 md:top-[-36px] md:right-[-28px] z-[-1]"><img src={des7} alt="" /></div>
+                            <div className="absolute bottom-1 md:bottom-[-20px] right-1 md:right-[-60px]"><img src={des8} alt="" className="w-[72px] h-[72px] md:w-[120px] md:h-[120px]"/></div>
                     </div>
                 </div>
             </div>

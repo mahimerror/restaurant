@@ -51,11 +51,11 @@ const Book = () => {
             .then(
                 (response) => {
                     console.log('Success:', response);
-                    toast('Your message has been sent successfully!');
+                    toast('Your reservation has been successfull!');
                 },
                 (error) => {
                     console.error('Error:', error);
-                    toast('There was an error sending the message.');
+                    toast('There was an error to reserve.');
                 }
             );
         }
@@ -129,6 +129,7 @@ const Book = () => {
                         <input
                             type="submit"
                             name="submit"
+                            value="Book Now"
                             className="cursor-pointer font-bold px-6 py-3 transition duration-500 ease-in-out bg-ylw text-black hover:text-ylw hover:bg-transparent hover:outline hover:outline-4 hover:outline-ylw hover:outline-offset-[-4px] roboto uppercase mt-6 md:mt-8"
                         />
                     </form>
